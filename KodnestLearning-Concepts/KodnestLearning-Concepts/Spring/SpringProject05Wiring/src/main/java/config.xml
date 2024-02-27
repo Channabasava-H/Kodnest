@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    
+    <bean class="com.kodnest.spring.SpringProject05Wiring.Mobile" id="mbl1">
+    	<property name="brand" value="Apple"></property>
+    	<property name="cost" value="80000"></property>
+    	<property name="RAMsize" value="8"></property>
+    </bean>
+    <bean class="com.kodnest.spring.SpringProject05Wiring.Mobile" id="mbl2">
+    	<property name="brand" value="Samsung"></property>
+    	<property name="cost" value="50000"></property>
+    	<property name="RAMsize" value="6"></property>
+    </bean>
+    <bean class="com.kodnest.spring.SpringProject05Wiring.Mobile" id="mbl3">
+    	<property name="brand" value="GooglePixel"></property>
+    	<property name="cost" value="75000"></property>
+    	<property name="RAMsize" value="12"></property>
+    </bean>
+    
+    <bean class="com.kodnest.spring.SpringProject05Wiring.Person" id="per">
+    	<property name="mbl" ref="mbl3"></property>
+    </bean>
+    
+</beans>

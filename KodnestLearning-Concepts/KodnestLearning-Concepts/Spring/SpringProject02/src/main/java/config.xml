@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    
+
+	<bean class="com.kodnest.spring.SpringProject02.Laptop" id="lp1"> 
+		<property name="srNo" value="01"></property>
+		<property name="brand" value="HP"></property>
+		<property name="cost" value="120000"></property>
+	</bean>
+	
+	<bean class="com.kodnest.spring.SpringProject02.Laptop" id="lp2">
+		<constructor-arg value="02"></constructor-arg>
+		<constructor-arg value="Apple"></constructor-arg>
+		<constructor-arg value="300000"></constructor-arg>
+	</bean>
+ 
+</beans>

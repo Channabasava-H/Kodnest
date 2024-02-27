@@ -1,0 +1,11 @@
+Rotate the elements of an array 'k' times:
+
+Problem: We are given an array, and we need to rotate its elements 'k' times towards the right. 
+To rotate means to shift every element one position to the right and move the last element to the first position.
+
+Approach: 
+The approach we'll take here is straightforward. 
+We'll use a temporary variable to hold the last element of the array, 
+shift every other element one position to the right,
+ and then place the last element at the start of the array.
+ We will repeat this process 'k' times.

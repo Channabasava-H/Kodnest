@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ https://www.springframework.org/schema/context/spring-context.xsd">
+ <context:annotation-config/>
+    
+    <bean class="com.kodnest.spring.SpringProject07AutoWiring.University" 
+    id="uni"></bean>
+	
+	<bean class="com.kodnest.spring.SpringProject07AutoWiring.Professor"
+	id="pr">
+	<property name="prId" value="13"></property>
+	<property name="prName" value="Amit"></property>
+	<property name="prSubject" value="Maths"></property>
+	</bean>
+	
+	<bean class="com.kodnest.spring.SpringProject07AutoWiring.Professor"
+	id="pr2">
+	<property name="prId" value="14"></property>
+	<property name="prName" value="Subham"></property>
+	<property name="prSubject" value="Physics"></property>
+	</bean>
+	
+	<bean class="com.kodnest.spring.SpringProject07AutoWiring.Professor"
+	id="pr3">
+	<property name="prId" value="15"></property>
+	<property name="prName" value="Abhishek"></property>
+	<property name="prSubject" value="Chemistry"></property>
+	</bean>
+	
+</beans>

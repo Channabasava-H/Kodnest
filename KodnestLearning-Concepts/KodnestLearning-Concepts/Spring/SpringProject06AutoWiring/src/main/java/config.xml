@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <!-- Auto Wiring byName -->
+    <!-- 
+    <bean class="com.kodnest.spring.SpringProject06AutoWiring.Car" 
+    id="car" autowire="byName">
+    </bean>
+     -->
+       
+     <!-- Auto Wiring byType -->
+     <!--
+    <bean class="com.kodnest.spring.SpringProject06AutoWiring.Car" 
+    id="car" autowire="byType">
+    </bean>
+    -->
+    
+     <!-- Auto Wiring using constructors to set value -->
+    <bean class="com.kodnest.spring.SpringProject06AutoWiring.Car" 
+    id="car" autowire="constructor">
+    </bean>
+    
+    <bean class="com.kodnest.spring.SpringProject06AutoWiring.Engine" 
+    id="eng">
+    	<property name="eng_No" value="11"></property>
+    	<property name="eng_Type" value="Petrol"></property>
+    </bean>
+    
+</beans>

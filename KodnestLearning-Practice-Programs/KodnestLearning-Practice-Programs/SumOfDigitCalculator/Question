@@ -1,0 +1,10 @@
+Sum of Digits Calculator
+
+Question Description:
+
+Create a program that calculates the sum of the digits of a number. 
+The program should accept an integer 'n' as input.
+
+Sample Input: 12345
+
+Sample Output: 15
